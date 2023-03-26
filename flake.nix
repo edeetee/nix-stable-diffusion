@@ -51,6 +51,7 @@
         realesrgan
         pillow
         safetensors
+        inflection
       ]
       ++ nixlib.optional (nvidia) [ xformers ] #probably won't fully work
       ++ nixlib.optional (!webui) [
@@ -156,6 +157,7 @@
             "compel"
             "diffusers"
             "safetensors"
+            "inclection"
             "picklescan"
             "openclip"
             "blendmodes"
